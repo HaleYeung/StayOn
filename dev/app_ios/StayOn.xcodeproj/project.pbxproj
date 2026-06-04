@@ -1,0 +1,718 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 77;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0BDDCB8014507DDC4147DD69 /* MedicationListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5E94E89B9993552AC1DDBC6D /* MedicationListView.swift */; };
+		0DAC91237C7E2E207DE750D2 /* Medication.swift in Sources */ = {isa = PBXBuildFile; fileRef = 9DCA6176E14D18E967116538 /* Medication.swift */; };
+		22135678D2ADD38A497EB207 /* AppColors.swift in Sources */ = {isa = PBXBuildFile; fileRef = D05BB004BB7D08C7F2945DB6 /* AppColors.swift */; };
+		25C57916451245847FB323BC /* MealRule.swift in Sources */ = {isa = PBXBuildFile; fileRef = DB2ACD988A023DD40844097A /* MealRule.swift */; };
+		28628623D861B08E99187619 /* NotificationIdentifiers.swift in Sources */ = {isa = PBXBuildFile; fileRef = 00E27448F1C9C7A338CF99C9 /* NotificationIdentifiers.swift */; };
+		34A9F1D5F8E9AC211BB497D7 /* PermissionBanner.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2EC31564BB7D075EE59602 /* PermissionBanner.swift */; };
+		382621B6BB6E1EBF2FE92AEB /* StayOnApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F5225948C011B658974B0E4D /* StayOnApp.swift */; };
+		4601C174BD4E23711BED176E /* PrimaryActionButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 290041C39D3150847420D4BF /* PrimaryActionButton.swift */; };
+		463BE9AC3089F6CAAEA5E1EE /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = DF0DB0D56E0025BFF13E8546 /* Assets.xcassets */; };
+		491F76BD16B228296267A1DA /* AppTypography.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6A91DE92A1E3414E93BA7B22 /* AppTypography.swift */; };
+		4B48470B2799AD94CFD8D66B /* NotificationTextBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0255FF9750774515DDD3FA93 /* NotificationTextBuilder.swift */; };
+		5573DF9F5121BD59CB114875 /* TagChipView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05E449C570FB1ADD375F95F8 /* TagChipView.swift */; };
+		5747AFBFF2A77D280A110098 /* SleepSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1086309CBCE76BA4870F4EE6 /* SleepSettingsView.swift */; };
+		5BBBA7908568F0F47A23EFE6 /* MealReminderCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7A750C8EE93FDA9867611F76 /* MealReminderCard.swift */; };
+		5D3F24584E11E15E84E09B20 /* RoutineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCC074BA35336AFEBC2D883D /* RoutineView.swift */; };
+		5D6DE9700DB1C603500B1AE5 /* AppSettings.swift in Sources */ = {isa = PBXBuildFile; fileRef = D330F018C0C08DA7641C405B /* AppSettings.swift */; };
+		64C24240A1441B2BDF2D6215 /* DailyEventGenerator.swift in Sources */ = {isa = PBXBuildFile; fileRef = AB19F949F8480E16370B9AA7 /* DailyEventGenerator.swift */; };
+		69C21F345D076C491AD67A88 /* MealRuleListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5CEB3078CC06C01AC5571B9E /* MealRuleListView.swift */; };
+		69E9E7E2369F172B72F869DB /* SleepPlan.swift in Sources */ = {isa = PBXBuildFile; fileRef = 942297E0E79E5347D64A9FFD /* SleepPlan.swift */; };
+		6B4AA007E2324809286D8089 /* TodayView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4A0FBE0C19161BD6E58BDB74 /* TodayView.swift */; };
+		71332623BE9AF7D3E90F097A /* NightSnackEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 268A037B293F8BD49FDCDD92 /* NightSnackEvent.swift */; };
+		802F37D7AFB833D838FE62FF /* MealEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = DF6869E962BCB4E54B087E46 /* MealEvent.swift */; };
+		804BA1484D8BD016EB09EE75 /* NotificationActionHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = F702449CB00413CCE6785D68 /* NotificationActionHandler.swift */; };
+		80D71B45D30DC1BD9F137A22 /* NotificationManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = C6B9AA7E4FF21963878B0BFE /* NotificationManager.swift */; };
+		80F7A3B25BE2100E7560AAAE /* NotificationScheduler.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD5661DD563E51E86B93298F /* NotificationScheduler.swift */; };
+		81DB41B560E5282A6A780C63 /* HistoryView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6807EE06DFC8BFD700654B08 /* HistoryView.swift */; };
+		891D7520DD9794B3D717FA89 /* SleepEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3BF30D98BC747B6B03816EFA /* SleepEvent.swift */; };
+		8B976F07770B3F24C258FBE4 /* FullLogView.swift in Sources */ = {isa = PBXBuildFile; fileRef = B03442E6CE4D717B3D1AE5F7 /* FullLogView.swift */; };
+		94725A9D70B48BCE2BE77C69 /* EmptyStateView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 63968FDEE6839F46827B2F4F /* EmptyStateView.swift */; };
+		A0543C10737C2141ADB90E5F /* NightSnackSettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 05EAC6C5420341C978E4AC49 /* NightSnackSettingsView.swift */; };
+		A429898DDE50116A6235BA9D /* MedicationEventDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 50433C46AD98F538A75F8477 /* MedicationEventDetailView.swift */; };
+		AD5A99620E8FACAA35370645 /* SettingsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2280727787612D67C4E326B4 /* SettingsView.swift */; };
+		AE01FB9EE26199BD42892C84 /* StreakCalculator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 285325057D206002045B5DB9 /* StreakCalculator.swift */; };
+		B886F3141A0E388B8F039562 /* Date+Extensions.swift in Sources */ = {isa = PBXBuildFile; fileRef = EC646D4EBE273BE9556BBE13 /* Date+Extensions.swift */; };
+		C03BCF4CEBB18CAF43B3D8BC /* MealTagManagementView.swift in Sources */ = {isa = PBXBuildFile; fileRef = E25BBD5C1285D4CE02D55FCF /* MealTagManagementView.swift */; };
+		D81C345F7437C0F48F79B4E2 /* MedicationEvent.swift in Sources */ = {isa = PBXBuildFile; fileRef = F64E087F70A8ECC26F791EEA /* MedicationEvent.swift */; };
+		DA16B9BCF18B0BF60788B79D /* MealRuleEditView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 494947470BE1FB0812EAAAA6 /* MealRuleEditView.swift */; };
+		DEE437E31650AB2DA0B95592 /* MedicationFormView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FBAC6059B661881FB74A1CCE /* MedicationFormView.swift */; };
+		E7605766F827137482211EF7 /* HistoryDayDetailView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 73A187042993219EFC202C5D /* HistoryDayDetailView.swift */; };
+		EEC3933205D16F9E3E5AA3EB /* SleepSummaryCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 57FCA2EA497E8DA39BAC5765 /* SleepSummaryCard.swift */; };
+		F5BC3A43FE997E3E7DD0A6F4 /* RootTabView.swift in Sources */ = {isa = PBXBuildFile; fileRef = FFD1A7D34084DF4762191E1B /* RootTabView.swift */; };
+		F78153B3E818153D8984E6D6 /* StatusCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 6B7F43C01E994DD10290DBE4 /* StatusCard.swift */; };
+		FBB8E2CC236322446C4CFB15 /* NightSnackCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 49115ED53D4E2D5F5599BEFC /* NightSnackCard.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		00E27448F1C9C7A338CF99C9 /* NotificationIdentifiers.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationIdentifiers.swift; sourceTree = "<group>"; };
+		0255FF9750774515DDD3FA93 /* NotificationTextBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationTextBuilder.swift; sourceTree = "<group>"; };
+		05E449C570FB1ADD375F95F8 /* TagChipView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TagChipView.swift; sourceTree = "<group>"; };
+		05EAC6C5420341C978E4AC49 /* NightSnackSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSnackSettingsView.swift; sourceTree = "<group>"; };
+		1086309CBCE76BA4870F4EE6 /* SleepSettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSettingsView.swift; sourceTree = "<group>"; };
+		2280727787612D67C4E326B4 /* SettingsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SettingsView.swift; sourceTree = "<group>"; };
+		268A037B293F8BD49FDCDD92 /* NightSnackEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSnackEvent.swift; sourceTree = "<group>"; };
+		285325057D206002045B5DB9 /* StreakCalculator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StreakCalculator.swift; sourceTree = "<group>"; };
+		28F385A351D652E49B4ABFD9 /* StayOn.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = StayOn.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		290041C39D3150847420D4BF /* PrimaryActionButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PrimaryActionButton.swift; sourceTree = "<group>"; };
+		3BF30D98BC747B6B03816EFA /* SleepEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepEvent.swift; sourceTree = "<group>"; };
+		49115ED53D4E2D5F5599BEFC /* NightSnackCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NightSnackCard.swift; sourceTree = "<group>"; };
+		494947470BE1FB0812EAAAA6 /* MealRuleEditView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRuleEditView.swift; sourceTree = "<group>"; };
+		4A0FBE0C19161BD6E58BDB74 /* TodayView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodayView.swift; sourceTree = "<group>"; };
+		50433C46AD98F538A75F8477 /* MedicationEventDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationEventDetailView.swift; sourceTree = "<group>"; };
+		57FCA2EA497E8DA39BAC5765 /* SleepSummaryCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepSummaryCard.swift; sourceTree = "<group>"; };
+		5B2EC31564BB7D075EE59602 /* PermissionBanner.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionBanner.swift; sourceTree = "<group>"; };
+		5CEB3078CC06C01AC5571B9E /* MealRuleListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRuleListView.swift; sourceTree = "<group>"; };
+		5E94E89B9993552AC1DDBC6D /* MedicationListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationListView.swift; sourceTree = "<group>"; };
+		63968FDEE6839F46827B2F4F /* EmptyStateView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EmptyStateView.swift; sourceTree = "<group>"; };
+		6807EE06DFC8BFD700654B08 /* HistoryView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryView.swift; sourceTree = "<group>"; };
+		6A91DE92A1E3414E93BA7B22 /* AppTypography.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppTypography.swift; sourceTree = "<group>"; };
+		6B7F43C01E994DD10290DBE4 /* StatusCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusCard.swift; sourceTree = "<group>"; };
+		73A187042993219EFC202C5D /* HistoryDayDetailView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HistoryDayDetailView.swift; sourceTree = "<group>"; };
+		7A750C8EE93FDA9867611F76 /* MealReminderCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealReminderCard.swift; sourceTree = "<group>"; };
+		8047BFE218A4AE673A40EF93 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		942297E0E79E5347D64A9FFD /* SleepPlan.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SleepPlan.swift; sourceTree = "<group>"; };
+		9DCA6176E14D18E967116538 /* Medication.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Medication.swift; sourceTree = "<group>"; };
+		AB19F949F8480E16370B9AA7 /* DailyEventGenerator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DailyEventGenerator.swift; sourceTree = "<group>"; };
+		B03442E6CE4D717B3D1AE5F7 /* FullLogView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FullLogView.swift; sourceTree = "<group>"; };
+		C6B9AA7E4FF21963878B0BFE /* NotificationManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationManager.swift; sourceTree = "<group>"; };
+		D05BB004BB7D08C7F2945DB6 /* AppColors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppColors.swift; sourceTree = "<group>"; };
+		D330F018C0C08DA7641C405B /* AppSettings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppSettings.swift; sourceTree = "<group>"; };
+		DB2ACD988A023DD40844097A /* MealRule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealRule.swift; sourceTree = "<group>"; };
+		DF0DB0D56E0025BFF13E8546 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		DF6869E962BCB4E54B087E46 /* MealEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealEvent.swift; sourceTree = "<group>"; };
+		E25BBD5C1285D4CE02D55FCF /* MealTagManagementView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MealTagManagementView.swift; sourceTree = "<group>"; };
+		EC646D4EBE273BE9556BBE13 /* Date+Extensions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Date+Extensions.swift"; sourceTree = "<group>"; };
+		F5225948C011B658974B0E4D /* StayOnApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StayOnApp.swift; sourceTree = "<group>"; };
+		F64E087F70A8ECC26F791EEA /* MedicationEvent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationEvent.swift; sourceTree = "<group>"; };
+		F702449CB00413CCE6785D68 /* NotificationActionHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationActionHandler.swift; sourceTree = "<group>"; };
+		FBAC6059B661881FB74A1CCE /* MedicationFormView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MedicationFormView.swift; sourceTree = "<group>"; };
+		FCC074BA35336AFEBC2D883D /* RoutineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RoutineView.swift; sourceTree = "<group>"; };
+		FD5661DD563E51E86B93298F /* NotificationScheduler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationScheduler.swift; sourceTree = "<group>"; };
+		FFD1A7D34084DF4762191E1B /* RootTabView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootTabView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXGroup section */
+		0E60C1EF42BF6ED04E5EED3B /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D330F018C0C08DA7641C405B /* AppSettings.swift */,
+				DF6869E962BCB4E54B087E46 /* MealEvent.swift */,
+				DB2ACD988A023DD40844097A /* MealRule.swift */,
+				9DCA6176E14D18E967116538 /* Medication.swift */,
+				F64E087F70A8ECC26F791EEA /* MedicationEvent.swift */,
+				268A037B293F8BD49FDCDD92 /* NightSnackEvent.swift */,
+				3BF30D98BC747B6B03816EFA /* SleepEvent.swift */,
+				942297E0E79E5347D64A9FFD /* SleepPlan.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		13FD149C7294FBD9599214D9 /* Shared */ = {
+			isa = PBXGroup;
+			children = (
+				A16AD52BCF844D441E76771E /* Components */,
+				4AEDD2895D3D0F75F6020F49 /* Extensions */,
+				A3B1227E972FC4B1BA76269A /* Protocols */,
+				47A996B3C878361C36069918 /* Theme */,
+				A393AEB482E85495E7896486 /* Utils */,
+			);
+			path = Shared;
+			sourceTree = "<group>";
+		};
+		17DE0612DCD186C926CD7AEF /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		1F2463C8C4F6AEA881823B61 /* Settings */ = {
+			isa = PBXGroup;
+			children = (
+				8C6E04714379897F22BE0A6D /* ViewModels */,
+				7AB87BAEFFBEA41503924503 /* Views */,
+			);
+			path = Settings;
+			sourceTree = "<group>";
+		};
+		25FB55CCDEEF84F97911B43A /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				50433C46AD98F538A75F8477 /* MedicationEventDetailView.swift */,
+				FBAC6059B661881FB74A1CCE /* MedicationFormView.swift */,
+				5E94E89B9993552AC1DDBC6D /* MedicationListView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3387D48A2A66BDC1FEFDDAEA /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				494947470BE1FB0812EAAAA6 /* MealRuleEditView.swift */,
+				5CEB3078CC06C01AC5571B9E /* MealRuleListView.swift */,
+				05EAC6C5420341C978E4AC49 /* NightSnackSettingsView.swift */,
+				FCC074BA35336AFEBC2D883D /* RoutineView.swift */,
+				1086309CBCE76BA4870F4EE6 /* SleepSettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		3535F1C1B6D049ED7A3D71B9 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D18A4AFBD9911D9C838FB21 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		3D31D3E8533C89F1910FF119 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				7A750C8EE93FDA9867611F76 /* MealReminderCard.swift */,
+				49115ED53D4E2D5F5599BEFC /* NightSnackCard.swift */,
+				57FCA2EA497E8DA39BAC5765 /* SleepSummaryCard.swift */,
+				4A0FBE0C19161BD6E58BDB74 /* TodayView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		47A996B3C878361C36069918 /* Theme */ = {
+			isa = PBXGroup;
+			children = (
+				D05BB004BB7D08C7F2945DB6 /* AppColors.swift */,
+				6A91DE92A1E3414E93BA7B22 /* AppTypography.swift */,
+			);
+			path = Theme;
+			sourceTree = "<group>";
+		};
+		4AEDD2895D3D0F75F6020F49 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EC646D4EBE273BE9556BBE13 /* Date+Extensions.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		581EC14E3984A873F83F8FAB /* History */ = {
+			isa = PBXGroup;
+			children = (
+				3535F1C1B6D049ED7A3D71B9 /* ViewModels */,
+				CDA3D592788798C24E7FDBE6 /* Views */,
+			);
+			path = History;
+			sourceTree = "<group>";
+		};
+		67C4A2B5631C06E99F082C9F /* App */ = {
+			isa = PBXGroup;
+			children = (
+				FFD1A7D34084DF4762191E1B /* RootTabView.swift */,
+				F5225948C011B658974B0E4D /* StayOnApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		76B18C1E218CFE3C4D933A27 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		7AB87BAEFFBEA41503924503 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				E25BBD5C1285D4CE02D55FCF /* MealTagManagementView.swift */,
+				2280727787612D67C4E326B4 /* SettingsView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		7C4041C6979212471CB3EC04 /* Medication */ = {
+			isa = PBXGroup;
+			children = (
+				3D18A4AFBD9911D9C838FB21 /* ViewModels */,
+				25FB55CCDEEF84F97911B43A /* Views */,
+			);
+			path = Medication;
+			sourceTree = "<group>";
+		};
+		8A9A9EA33F5C093132612B39 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				581EC14E3984A873F83F8FAB /* History */,
+				7C4041C6979212471CB3EC04 /* Medication */,
+				A27BE70D32D48A8C5C68FD32 /* Routine */,
+				1F2463C8C4F6AEA881823B61 /* Settings */,
+				E2D6980C83D53B09D9112BDE /* Today */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		8C6E04714379897F22BE0A6D /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		995EA44A18403942DB6C43C3 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				DF0DB0D56E0025BFF13E8546 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		9B68A4BF9883AF8DA4052282 /* Summary */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Summary;
+			sourceTree = "<group>";
+		};
+		9F4E92F4581A0B570808F27C /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				28F385A351D652E49B4ABFD9 /* StayOn.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		A16AD52BCF844D441E76771E /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				63968FDEE6839F46827B2F4F /* EmptyStateView.swift */,
+				5B2EC31564BB7D075EE59602 /* PermissionBanner.swift */,
+				290041C39D3150847420D4BF /* PrimaryActionButton.swift */,
+				6B7F43C01E994DD10290DBE4 /* StatusCard.swift */,
+				05E449C570FB1ADD375F95F8 /* TagChipView.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		A27BE70D32D48A8C5C68FD32 /* Routine */ = {
+			isa = PBXGroup;
+			children = (
+				76B18C1E218CFE3C4D933A27 /* ViewModels */,
+				3387D48A2A66BDC1FEFDDAEA /* Views */,
+			);
+			path = Routine;
+			sourceTree = "<group>";
+		};
+		A393AEB482E85495E7896486 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				285325057D206002045B5DB9 /* StreakCalculator.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		A3B1227E972FC4B1BA76269A /* Protocols */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Protocols;
+			sourceTree = "<group>";
+		};
+		C517494B6CC0D75957DA1CF4 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				FB5F399D79FEF8C761867359 /* Data */,
+				FB5EE5454207D0DA0E0F2C60 /* Notification */,
+				9B68A4BF9883AF8DA4052282 /* Summary */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		CDA3D592788798C24E7FDBE6 /* Views */ = {
+			isa = PBXGroup;
+			children = (
+				B03442E6CE4D717B3D1AE5F7 /* FullLogView.swift */,
+				73A187042993219EFC202C5D /* HistoryDayDetailView.swift */,
+				6807EE06DFC8BFD700654B08 /* HistoryView.swift */,
+			);
+			path = Views;
+			sourceTree = "<group>";
+		};
+		D305042B686FA7B16E0AB942 /* StayOn */ = {
+			isa = PBXGroup;
+			children = (
+				67C4A2B5631C06E99F082C9F /* App */,
+				8A9A9EA33F5C093132612B39 /* Features */,
+				0E60C1EF42BF6ED04E5EED3B /* Models */,
+				995EA44A18403942DB6C43C3 /* Resources */,
+				C517494B6CC0D75957DA1CF4 /* Services */,
+				13FD149C7294FBD9599214D9 /* Shared */,
+				8047BFE218A4AE673A40EF93 /* Info.plist */,
+			);
+			path = StayOn;
+			sourceTree = "<group>";
+		};
+		DF2FF111B9ABCE4E1D9755C3 = {
+			isa = PBXGroup;
+			children = (
+				D305042B686FA7B16E0AB942 /* StayOn */,
+				9F4E92F4581A0B570808F27C /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		E2D6980C83D53B09D9112BDE /* Today */ = {
+			isa = PBXGroup;
+			children = (
+				17DE0612DCD186C926CD7AEF /* ViewModels */,
+				3D31D3E8533C89F1910FF119 /* Views */,
+			);
+			path = Today;
+			sourceTree = "<group>";
+		};
+		FB5EE5454207D0DA0E0F2C60 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				F702449CB00413CCE6785D68 /* NotificationActionHandler.swift */,
+				00E27448F1C9C7A338CF99C9 /* NotificationIdentifiers.swift */,
+				C6B9AA7E4FF21963878B0BFE /* NotificationManager.swift */,
+				FD5661DD563E51E86B93298F /* NotificationScheduler.swift */,
+				0255FF9750774515DDD3FA93 /* NotificationTextBuilder.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		FB5F399D79FEF8C761867359 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				AB19F949F8480E16370B9AA7 /* DailyEventGenerator.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3249C1C3E62E1B7263CD69B3 /* StayOn */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EF3A5E60DC1B88CAC2B2FB48 /* Build configuration list for PBXNativeTarget "StayOn" */;
+			buildPhases = (
+				668B90AF6591203995420ADE /* Sources */,
+				35CCE13D09DBB09BF33CDEF1 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = StayOn;
+			packageProductDependencies = (
+			);
+			productName = StayOn;
+			productReference = 28F385A351D652E49B4ABFD9 /* StayOn.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		76F2E0D52DEFECC1A688077B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = YES;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					3249C1C3E62E1B7263CD69B3 = {
+						ProvisioningStyle = Automatic;
+					};
+				};
+			};
+			buildConfigurationList = F82961B90CA91BD617305C77 /* Build configuration list for PBXProject "StayOn" */;
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = DF2FF111B9ABCE4E1D9755C3;
+			minimizedProjectReferenceProxies = 1;
+			preferredProjectObjectVersion = 77;
+			productRefGroup = 9F4E92F4581A0B570808F27C /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3249C1C3E62E1B7263CD69B3 /* StayOn */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		35CCE13D09DBB09BF33CDEF1 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				463BE9AC3089F6CAAEA5E1EE /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		668B90AF6591203995420ADE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				22135678D2ADD38A497EB207 /* AppColors.swift in Sources */,
+				5D6DE9700DB1C603500B1AE5 /* AppSettings.swift in Sources */,
+				491F76BD16B228296267A1DA /* AppTypography.swift in Sources */,
+				64C24240A1441B2BDF2D6215 /* DailyEventGenerator.swift in Sources */,
+				B886F3141A0E388B8F039562 /* Date+Extensions.swift in Sources */,
+				94725A9D70B48BCE2BE77C69 /* EmptyStateView.swift in Sources */,
+				8B976F07770B3F24C258FBE4 /* FullLogView.swift in Sources */,
+				E7605766F827137482211EF7 /* HistoryDayDetailView.swift in Sources */,
+				81DB41B560E5282A6A780C63 /* HistoryView.swift in Sources */,
+				802F37D7AFB833D838FE62FF /* MealEvent.swift in Sources */,
+				5BBBA7908568F0F47A23EFE6 /* MealReminderCard.swift in Sources */,
+				25C57916451245847FB323BC /* MealRule.swift in Sources */,
+				DA16B9BCF18B0BF60788B79D /* MealRuleEditView.swift in Sources */,
+				69C21F345D076C491AD67A88 /* MealRuleListView.swift in Sources */,
+				C03BCF4CEBB18CAF43B3D8BC /* MealTagManagementView.swift in Sources */,
+				0DAC91237C7E2E207DE750D2 /* Medication.swift in Sources */,
+				D81C345F7437C0F48F79B4E2 /* MedicationEvent.swift in Sources */,
+				A429898DDE50116A6235BA9D /* MedicationEventDetailView.swift in Sources */,
+				DEE437E31650AB2DA0B95592 /* MedicationFormView.swift in Sources */,
+				0BDDCB8014507DDC4147DD69 /* MedicationListView.swift in Sources */,
+				FBB8E2CC236322446C4CFB15 /* NightSnackCard.swift in Sources */,
+				71332623BE9AF7D3E90F097A /* NightSnackEvent.swift in Sources */,
+				A0543C10737C2141ADB90E5F /* NightSnackSettingsView.swift in Sources */,
+				804BA1484D8BD016EB09EE75 /* NotificationActionHandler.swift in Sources */,
+				28628623D861B08E99187619 /* NotificationIdentifiers.swift in Sources */,
+				80D71B45D30DC1BD9F137A22 /* NotificationManager.swift in Sources */,
+				80F7A3B25BE2100E7560AAAE /* NotificationScheduler.swift in Sources */,
+				4B48470B2799AD94CFD8D66B /* NotificationTextBuilder.swift in Sources */,
+				34A9F1D5F8E9AC211BB497D7 /* PermissionBanner.swift in Sources */,
+				4601C174BD4E23711BED176E /* PrimaryActionButton.swift in Sources */,
+				F5BC3A43FE997E3E7DD0A6F4 /* RootTabView.swift in Sources */,
+				5D3F24584E11E15E84E09B20 /* RoutineView.swift in Sources */,
+				AD5A99620E8FACAA35370645 /* SettingsView.swift in Sources */,
+				891D7520DD9794B3D717FA89 /* SleepEvent.swift in Sources */,
+				69E9E7E2369F172B72F869DB /* SleepPlan.swift in Sources */,
+				5747AFBFF2A77D280A110098 /* SleepSettingsView.swift in Sources */,
+				EEC3933205D16F9E3E5AA3EB /* SleepSummaryCard.swift in Sources */,
+				F78153B3E818153D8984E6D6 /* StatusCard.swift in Sources */,
+				382621B6BB6E1EBF2FE92AEB /* StayOnApp.swift in Sources */,
+				AE01FB9EE26199BD42892C84 /* StreakCalculator.swift in Sources */,
+				5573DF9F5121BD59CB114875 /* TagChipView.swift in Sources */,
+				6B4AA007E2324809286D8089 /* TodayView.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		0242B0523DC03037B2308EC0 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEVELOPMENT_TEAM = "";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Release;
+		};
+		4D430BB044A3ED762FD9732B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Automatic;
+				COPY_PHASE_STRIP = NO;
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEVELOPMENT_TEAM = "";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"DEBUG=1",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MARKETING_VERSION = 1.0.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.9;
+			};
+			name = Debug;
+		};
+		919F3A592F974DD9F2E1EA9D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = PH94CX9SF4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StayOn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayon.app.haleyeung;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		C73925C176F9A790AF9FAF9D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				DEVELOPMENT_TEAM = PH94CX9SF4;
+				ENABLE_PREVIEWS = YES;
+				INFOPLIST_FILE = StayOn/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.stayon.app.haleyeung;
+				SDKROOT = iphoneos;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EF3A5E60DC1B88CAC2B2FB48 /* Build configuration list for PBXNativeTarget "StayOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C73925C176F9A790AF9FAF9D /* Debug */,
+				919F3A592F974DD9F2E1EA9D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+		F82961B90CA91BD617305C77 /* Build configuration list for PBXProject "StayOn" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4D430BB044A3ED762FD9732B /* Debug */,
+				0242B0523DC03037B2308EC0 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Debug;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 76F2E0D52DEFECC1A688077B /* Project object */;
+}

@@ -1,0 +1,74 @@
+# macOS
+.DS_Store
+*.swp
+*.swo
+*~
+
+## Claude Code local config & memory
+.claude/
+
+# ============================
+# iOS (app_ios/)
+# ============================
+
+## XcodeGen generated — regenerate from project.yml
+*.xcworkspace
+
+## Xcode user-specific
+xcuserdata/
+*.xcuserstate
+
+## Build artifacts
+DerivedData/
+build/
+.build/
+*.app
+*.dSYM.zip
+*.dSYM
+
+## CocoaPods (not used but just in case)
+Pods/
+
+# ============================
+# Android (app_android/)
+# ============================
+
+## Gradle
+.gradle/
+build/
+app/build/
+*.apk
+*.aab
+*.ap_
+*.dex
+
+## IDE
+.idea/
+*.iml
+
+## NDK / CMake
+.externalNativeBuild/
+.cxx/
+*.so
+
+## Proguard / Mapping
+proguard/
+mapping.txt
+seeds.txt
+usage.txt
+
+## Android Test
+captures/
+
+# ============================
+# General
+# ============================
+
+## Editor & OS
+.vscode/
+*.log
+.env
+.env.local
+
+## Package manager lockfiles (keep for npm/pip, remove for gradle)
+node_modules/

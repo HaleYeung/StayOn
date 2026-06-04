@@ -1,5 +1,6 @@
 package com.stayon.app.ui.medication
 
+import androidx.compose.foundation.clickable
 import androidx.compose.foundation.layout.*
 import androidx.compose.foundation.lazy.LazyColumn
 import androidx.compose.foundation.lazy.items
@@ -20,7 +21,8 @@ import com.stayon.app.ui.theme.*
 @Composable
 fun MedicationListScreen(
     viewModel: MedicationViewModel,
-    onNavigateToForm: () -> Unit = {}
+    onNavigateToForm: () -> Unit = {},
+    onNavigateToEdit: (String) -> Unit = {}
 ) {
     val uiState by viewModel.uiState.collectAsState()
 
@@ -79,7 +81,7 @@ fun MedicationListScreen(
                 items(uiState.medications) { med ->
                     MedicationCard(
                         medication = med,
-                        onClick = { /* TODO: edit */ },
+                        onClick = { onNavigateToEdit(med.id) },
                         onDelete = { viewModel.deleteMedication(med) }
                     )
                 }
@@ -105,7 +107,7 @@ private fun MedicationCard(
     onClick: () -> Unit,
     onDelete: () -> Unit
 ) {
-    Card(modifier = Modifier.fillMaxWidth()) {
+    Card(modifier = Modifier.fillMaxWidth().clickable { onClick() }) {
         Row(
             modifier = Modifier.fillMaxWidth().padding(12.dp),
             verticalAlignment = Alignment.CenterVertically,

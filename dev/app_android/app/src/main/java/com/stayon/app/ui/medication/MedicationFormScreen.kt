@@ -13,6 +13,7 @@ import androidx.compose.ui.unit.dp
 import com.stayon.app.domain.model.Medication
 import com.stayon.app.ui.theme.RedStatus
 import java.time.LocalTime
+import java.time.format.DateTimeFormatter
 
 @OptIn(ExperimentalMaterial3Api::class)
 @Composable
@@ -80,6 +81,37 @@ fun MedicationFormScreen(
                 }
                 Text("每天 $timesPerDay 次", style = MaterialTheme.typography.bodyMedium)
                 Slider(value = timesPerDay.toFloat(), onValueChange = { timesPerDay = it.toInt() }, valueRange = 1f..10f, steps = 9)
+
+                if (timesPerDay > 0) {
+                    Spacer(Modifier.height(4.dp))
+                    (0 until timesPerDay).forEach { index ->
+                        val time = if (index < reminderTimes.size) reminderTimes[index] else LocalTime.of(8, 0)
+                        Row(
+                            modifier = Modifier.fillMaxWidth(),
+                            verticalAlignment = Alignment.CenterVertically
+                        ) {
+                            Text("第 ${index + 1} 次", style = MaterialTheme.typography.bodySmall,
+                                modifier = Modifier.width(48.dp))
+                            var showTimePicker by remember { mutableStateOf(false) }
+                            TextButton(onClick = { showTimePicker = true }) {
+                                Text(time.format(java.time.format.DateTimeFormatter.ofPattern("HH:mm")),
+                                    style = MaterialTheme.typography.bodyLarge)
+                            }
+                            if (showTimePicker) {
+                                Material3DateTimePickerDialog(
+                                    initialHour = time.hour,
+                                    initialMinute = time.minute,
+                                    onConfirm = { h, m ->
+                                        while (reminderTimes.size <= index) reminderTimes = reminderTimes + LocalTime.of(8, 0)
+                                        reminderTimes = reminderTimes.toMutableList().also { it[index] = LocalTime.of(h, m) }
+                                        showTimePicker = false
+                                    },
+                                    onDismiss = { showTimePicker = false }
+                                )
+                            }
+                        }
+                    }
+                }
             }
         }
 
@@ -148,4 +180,30 @@ fun MedicationFormScreen(
             dismissButton = { TextButton(onClick = { showDeleteDialog = false }) { Text("取消") } }
         )
     }
+}
+
+@OptIn(ExperimentalMaterial3Api::class)
+@Composable
+private fun Material3DateTimePickerDialog(
+    initialHour: Int,
+    initialMinute: Int,
+    onConfirm: (Int, Int) -> Unit,
+    onDismiss: () -> Unit
+) {
+    val state = rememberTimePickerState(
+        initialHour = initialHour,
+        initialMinute = initialMinute,
+        is24Hour = true
+    )
+    AlertDialog(
+        onDismissRequest = onDismiss,
+        title = { Text("选择时间") },
+        text = { TimePicker(state = state) },
+        confirmButton = {
+            TextButton(onClick = { onConfirm(state.hour, state.minute) }) { Text("确定") }
+        },
+        dismissButton = {
+            TextButton(onClick = onDismiss) { Text("取消") }
+        }
+    )
 }

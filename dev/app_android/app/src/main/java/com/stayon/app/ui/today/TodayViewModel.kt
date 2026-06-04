@@ -61,6 +61,39 @@ class TodayViewModel(
         }
     }
 
+    fun confirmMedication(eventId: String, newStatus: String) {
+        viewModelScope.launch {
+            val confirmedAt = if (newStatus != "pending") System.currentTimeMillis() else null
+            medicationRepo.updateEventStatus(eventId, newStatus, confirmedAt)
+        }
+    }
+
+    fun confirmSleep() {
+        viewModelScope.launch {
+            val existing = uiState.value.sleepEvents.firstOrNull()
+            if (existing != null) {
+                sleepRepo.saveSleepEvent(existing.copy(status = "confirmed", confirmedAt = System.currentTimeMillis()))
+            } else {
+                val today = java.time.LocalDate.now().toString()
+                val now = System.currentTimeMillis()
+                sleepRepo.saveSleepEvent(SleepEvent(
+                    date = today, targetBedtime = now, preReminderAt = now,
+                    finalReminderAt = now, status = "confirmed", confirmedAt = now
+                ))
+            }
+        }
+    }
+
+    fun acknowledgeMeal(mealType: String, tags: List<String>, note: String?) {
+        viewModelScope.launch {
+            mealRepo.saveMealEvent(MealEvent(
+                mealType = mealType, scheduledAt = System.currentTimeMillis(),
+                status = "acknowledged", acknowledgedAt = System.currentTimeMillis(),
+                tagsSnapshot = tags, noteSnapshot = note
+            ))
+        }
+    }
+
     fun recordNightSnack(status: String) {
         viewModelScope.launch {
             val existing = mealRepo.getTodayNightSnack()

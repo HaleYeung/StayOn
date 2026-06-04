@@ -2,19 +2,22 @@ package com.stayon.app.ui.theme
 
 import androidx.compose.ui.graphics.Color
 
-val Orange80 = Color(0xFFFFB570)
-val Orange40 = Color(0xFF8C4B00)
-val OrangeGrey80 = Color(0xFFCCC2B4)
-val OrangeGrey60 = Color(0xFF8C7A6A)
+// iOS-style accents — blue/indigo dominant, warm for meal
+val PrimaryBlue80 = Color(0xFFB3D0FF)
+val PrimaryBlue40 = Color(0xFF357AE5)  // matches iOS AccentColor
+val SecondaryBlue80 = Color(0xFFB8C4D9)
+val SecondaryBlue60 = Color(0xFF6B7B99)
 
-val LightBackground = Color(0xFFFEF9F0)
-val DarkBackground = Color(0xFF1C1B1A)
+val LightBackground = Color(0xFFF8F9FE)
+val DarkBackground = Color(0xFF1A1C20)
 
-val MedicationColor = Color(0xFF4A90D9)
-val SleepColor = Color(0xFF5C6BC0)
-val MealColor = Color(0xFFFF8A65)
-val NightSnackColor = Color(0xFFAB47BC)
+// Category colors (keep aligned with iOS)
+val MedicationColor = Color(0xFF4A90D9)   // blue
+val SleepColor = Color(0xFF5C6BC0)        // indigo
+val MealColor = Color(0xFFFF8A65)         // orange
+val NightSnackColor = Color(0xFFAB47BC)   // purple
 
+// Status colors
 val GreenStatus = Color(0xFF4CAF50)
 val OrangeStatus = Color(0xFFFF9800)
 val RedStatus = Color(0xFFF44336)

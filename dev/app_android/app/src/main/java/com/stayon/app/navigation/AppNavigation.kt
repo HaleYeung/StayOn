@@ -8,6 +8,9 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.runtime.*
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.platform.LocalContext
+import kotlinx.coroutines.Dispatchers
+import kotlinx.coroutines.GlobalScope
+import kotlinx.coroutines.launch
 import androidx.navigation.NavDestination.Companion.hierarchy
 import androidx.navigation.NavGraph.Companion.findStartDestination
 import androidx.navigation.compose.NavHost
@@ -98,12 +101,26 @@ fun AppNavigation() {
             composable("medication") {
                 MedicationListScreen(
                     viewModel = medicationViewModel,
-                    onNavigateToForm = { navController.navigate("medication_form") }
+                    onNavigateToForm = { navController.navigate("medication_form/new") },
+                    onNavigateToEdit = { id -> navController.navigate("medication_form/$id") }
                 )
             }
-            composable("medication_form") {
+            composable("medication_form/{medicationId}") { backStackEntry ->
+                val medicationId = backStackEntry.arguments?.getString("medicationId") ?: ""
+                val ctx = LocalContext.current
+                val existingMed = if (medicationId != "new") {
+                    medicationViewModel.uiState.value.medications.find { it.id == medicationId }
+                } else null
                 MedicationFormScreen(
-                    onSave = { med -> medicationViewModel.saveMedication(med); navController.popBackStack() },
+                    existingMedication = existingMed,
+                    onSave = { med ->
+                        medicationViewModel.saveMedication(med)
+                        val db = (ctx.applicationContext as StayOnApplication).database
+                        GlobalScope.launch(Dispatchers.IO) {
+                            com.stayon.app.data.local.EventGenerator.generateFromPlans(db)
+                        }
+                        navController.popBackStack()
+                    },
                     onBack = { navController.popBackStack() }
                 )
             }

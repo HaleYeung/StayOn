@@ -121,7 +121,7 @@ fun SettingsScreen(
             Card(modifier = Modifier.fillMaxWidth()) {
                 Column(modifier = Modifier.padding(16.dp)) {
                     Text("扩展", style = MaterialTheme.typography.titleSmall)
-                    listOf("数据导出", "iCloud 同步", "Apple Health").forEach { item ->
+                    listOf("数据导出").forEach { item ->
                         Row(
                             modifier = Modifier.fillMaxWidth().padding(vertical = 4.dp),
                             horizontalArrangement = Arrangement.SpaceBetween
